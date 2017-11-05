@@ -1,0 +1,24 @@
+<html>
+
+<body>
+
+<form action="{{url_for('newMenuItem',restaurant_id = restaurant_id)}}" method='POST'>
+  <p style ="text-align:center; font-weight:bold;">Add new menu </p>
+
+  <div style = "display:block; width:100%; text-align:center;">
+    <div style = "display:inline-block" align="center">
+      <input type="text" size='30' name="name" placeholder="Menu name"><br/>
+      <input type="text" size='30' name="price" placeholder="Price"><br/>
+      <input type="text" size='30' name="description" placeholder="Description"><br/>
+      <input type="text" size='30' name="course" placeholder="Course"><br/>
+      <input type="submit" value='Add' style = "width:100%; display:block; margin-top:8px" ><br />
+      <a href="{{url_for('restaurantMenu',restaurant_id=restaurant_id)}}"> Cancel </a>
+    </div>
+  </div>
+
+</form>
+
+
+</body>
+
+</html>
